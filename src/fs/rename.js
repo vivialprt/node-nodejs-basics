@@ -10,7 +10,6 @@ const rename = async () => {
 
     try {
         await access(fullCorrectName);
-        console.log('here')
         throw Error('FS operation failed');
     } catch (err) {
         if (err.code != 'ENOENT')
